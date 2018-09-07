@@ -44,6 +44,14 @@
 		ease:Back.easeOut
 	})
 	.to($(".colorControl"), fTLTime, {
+		css : {color : "#227d51", borderColor: "#227d51"},
+		ease:Back.easeOut
+	})
+	.to($(".colorControl"), fTLTime, {
+		css : {color : "#2ea9df", borderColor: "#2ea9df"},
+		ease:Back.easeOut
+	})
+	.to($(".colorControl"), fTLTime, {
 		css : {color : "#986db2", borderColor: "#986db2"},
 		ease:Back.easeOut
 	});
