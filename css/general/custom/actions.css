@@ -20,6 +20,11 @@
 	word-break: break-all;
 }
 
+.items:not(.it-momoclo-red):not(.it-momoclo-purple):not(.it-momoclo-pink):not(.it-momoclo-yellow):not(.it-momoclo-green):not(.it-momoclo-all) {
+	display: none;
+	opacity: 0;
+}
+
 .actions .fixed {
 	margin: 1rem auto 0.5rem;
 	width: 90%;
@@ -144,12 +149,6 @@
 .it-momoclo-green .animated {
 	animation-duration: 1.8s;
 }
-.it-momoclo-blue {
-	background-color: #2ea9df;
-}
-.it-momoclo-blue .animated {
-	animation-duration: 1.8s;
-}
 .it-momoclo-all {
 	background-color: #ffffff;
 }
@@ -174,6 +173,11 @@
 }
 
 .item-disable {
+	display: none;
+	opacity: 0;
+}
+
+#tags-all {
 	display: none;
 	opacity: 0;
 }

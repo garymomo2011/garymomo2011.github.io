@@ -48,10 +48,6 @@
 		ease:Back.easeOut
 	})
 	.to($(".colorControl"), fTLTime, {
-		css : {color : "#2ea9df", borderColor: "#2ea9df"},
-		ease:Back.easeOut
-	})
-	.to($(".colorControl"), fTLTime, {
 		css : {color : "#986db2", borderColor: "#986db2"},
 		ease:Back.easeOut
 	});
@@ -59,7 +55,7 @@
 	$(".items").css("animation-duration", "4s").addClass("animated fadeInLeft");
 
 	$(".tags span").on("click tap", function() {
-		$(".items:not(.it-momoclo-red,.it-momoclo-purple,.it-momoclo-pink,.it-momoclo-yellow,.it-momoclo-green,.it-momoclo-blue,.it-momoclo-all)").hide();
+		$(".items:not(.it-momoclo-red,.it-momoclo-purple,.it-momoclo-pink,.it-momoclo-yellow,.it-momoclo-green,.it-momoclo-all)").hide();
 		var target = $(this).attr("id").split("-")[1];
 		if (target == "all") {
 			$(".items:not(.item-disable)").show();
