@@ -120,6 +120,21 @@
 			location.replace("https://garymomoindex.github.io/?visit=true");
 		}
 	});
+
+	$(".btn-modal").on("click tap", function() {
+		var htmlIframe1 = '<iframe src="https://www.youtube.com/embed/';
+		var htmlIframe2 = '" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+		var htmlIframeSrc = '';
+		var chkId = $(this).attr("id");
+		if (chkId == 'adModala1') {
+			htmlIframeSrc = 'rMvamfb40NM';
+		}
+		$("#adModal").find("#video-block").append(htmlIframe1 + htmlIframeSrc + htmlIframe2);
+	});
+
+	$("#adModal").on("hide.bs.modal", function() {
+		$(this).find("#video-block").empty();
+	});
 });
 
 $(window).on("load", function() {
